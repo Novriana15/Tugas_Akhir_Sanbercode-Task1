@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-29T02:09:16.095Z",
+    "end": "2023-10-29T02:09:30.333Z",
+    "duration": 14238,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f949eee4-764a-4596-bb84-45c45417da54",
+      "title": "",
+      "fullFile": "cypress/integration/addtocart.ts",
+      "file": "cypress/integration/addtocart.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Test Sauce Demo Sauce labs product fleece jacket & bolt t-shirt - Add To Cart",
+          "fullTitle": "Test Sauce Demo Sauce labs product fleece jacket & bolt t-shirt - Add To Cart",
+          "timedOut": null,
+          "duration": 6551,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.sauceLabsFleeceJacket();\ndashboardPage.clickBackToProducts();\ndashboardPage.sauceLabsBoltTShirt();\ncartPage.clickCart();\ncartPage.assertFleeceJacketAndBoltTshirt();",
+          "err": {},
+          "uuid": "16e085b0-a55d-4bbb-9700-582c00b4089a",
+          "parentUUID": "f949eee4-764a-4596-bb84-45c45417da54",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Sauce labs product fleece jacket & bolt t-shirt - Remove From Cart",
+          "fullTitle": "Test Sauce Demo Sauce labs product fleece jacket & bolt t-shirt - Remove From Cart",
+          "timedOut": null,
+          "duration": 4700,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\ndashboardPage.sauceLabsFleeceJacket();\ndashboardPage.clickBackToProducts();\ndashboardPage.sauceLabsBoltTShirt();\ncartPage.clickCart();\ncartPage.assertFleeceJacketAndBoltTshirt();\ncartPage.removeFleeceJacketnBoltTshirt();",
+          "err": {},
+          "uuid": "b6de3360-648c-4991-9508-864e425d0808",
+          "parentUUID": "f949eee4-764a-4596-bb84-45c45417da54",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "16e085b0-a55d-4bbb-9700-582c00b4089a",
+        "b6de3360-648c-4991-9508-864e425d0808"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 11251,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
